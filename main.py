@@ -1,62 +1,66 @@
 import numpy as np
 import cv2
-import imutils
+import  imutils
+import sys
+import pytesseract
+import pandas as pd
+import time
 
-# Read the image file
-image = cv2.imread('6.jpeg')
+image = cv2.imread('1.jpg')
 
-# Resize the image - change width to 500
 image = imutils.resize(image, width=500)
 
-# Display the original image
 cv2.imshow("Original Image", image)
 
-
-# RGB to Gray scale conversion
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-cv2.imshow("1 - Grayscale Conversion", gray)
+#cv2.imshow("1 - Grayscale Conversion", gray)
 
-
-# # Histogram equalization
-# gray = cv2.equalizeHist(gray)
-# cv2.imshow('histogram equalized', image)
-
-
-# Noise removal with iterative bilateral filter(removes noise while preserving edges)
 gray = cv2.bilateralFilter(gray, 18, 18, 17)
-cv2.imshow("2 - Bilateral Filter", gray)
+#cv2.imshow("2 - Bilateral Filter", gray)
+
 
 gray = cv2.GaussianBlur(gray,(5,3), 1)
 #comment for 1,6,7,20
 
 
-
-# Find Edges of the grayscale image
 edged = cv2.Canny(gray, 170, 200)
-cv2.imshow("4 - Canny Edges", edged)
+#cv2.imshow("4 - Canny Edges", edged)
 
-# Find contours based on Edges
-# (new, cnts) = cv2.findContours(edged.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
-# _,cnts, hier = cv2.findContours(edged.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
-(new, cnts, _)= cv2.findContours(edged.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+(new, cnts, _) = cv2.findContours(edged.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 cnts=sorted(cnts, key = cv2.contourArea, reverse = True)[:30]
+NumberPlateCnt = None
 
-#sort contours based on their area keeping minimum required area as '30' (anything smaller than this will not be considered)
-NumberPlateCnt = None #we currently have no Number plate contour
-
-# loop over our contours to find the best possible approximate contour of number plate
 count = 0
 for c in cnts:
         peri = cv2.arcLength(c, True)
         approx = cv2.approxPolyDP(c, 0.02 * peri, True)
-        if len(approx) == 4:  # Select the contour with 4 corners
-            NumberPlateCnt = approx #This is our approx Number Plate Contour
+        if len(approx) == 4:
+            NumberPlateCnt = approx
             break
 
+# Masking the part other than the number plate
+mask = np.zeros(gray.shape,np.uint8)
+new_image = cv2.drawContours(mask,[NumberPlateCnt],0,255,-1)
+new_image = cv2.bitwise_and(image,image,mask=mask)
+cv2.namedWindow("Final_image",cv2.WINDOW_NORMAL)
+cv2.imshow("Final_image",new_image)
+cv2.imwrite('test3.png',new_image)
 
-# Drawing the selected contour on the original image0
+# Configuration for tesseract
+config = ('-l eng --oem 1 --psm 3')
 
-cv2.drawContours(image, [NumberPlateCnt], -1, (0,255,0), 4)
-cv2.imshow("Final Image With Number Plate Detected", image)
+# Run tesseract OCR on image
+text = pytesseract.image_to_string(new_image, config=config)
+print(text)
+
+#Data is stored in CSV file
+raw_data = {'date': [time.asctime( time.localtime(time.time()) )],
+        'v_number': [text]}
+
+df = pd.DataFrame(raw_data, columns = ['date', 'v_number'])
+df.to_csv('data.csv')
+
+# Print recognized text
+print(text)
+
 cv2.waitKey(0)
-#Wait for user input before closing the images displayed0

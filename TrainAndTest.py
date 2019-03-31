@@ -63,6 +63,9 @@ def main():
 
     imgTestingNumbers = cv2.imread("test3.png")          # read in testing numbers image
 
+
+
+
     if imgTestingNumbers is None:                           # if image was not read successfully
         print ("error: image not read from file \n\n")        # print error message to std out
         os.system("pause")                                  # pause so user can see error message
