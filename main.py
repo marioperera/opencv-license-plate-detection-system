@@ -3,7 +3,7 @@ import cv2
 import imutils
 
 # Read the image file
-image = cv2.imread('3.jpeg')
+image = cv2.imread('6.jpeg')
 
 # Resize the image - change width to 500
 image = imutils.resize(image, width=500)
@@ -11,16 +11,28 @@ image = imutils.resize(image, width=500)
 # Display the original image
 cv2.imshow("Original Image", image)
 
+
 # RGB to Gray scale conversion
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 cv2.imshow("1 - Grayscale Conversion", gray)
+
+
+# # Histogram equalization
+# gray = cv2.equalizeHist(gray)
+# cv2.imshow('histogram equalized', image)
+
 
 # Noise removal with iterative bilateral filter(removes noise while preserving edges)
 gray = cv2.bilateralFilter(gray, 18, 18, 17)
 cv2.imshow("2 - Bilateral Filter", gray)
 
+gray = cv2.GaussianBlur(gray,(5,3), 1)
+#comment for 1,6,7,20
+
+
+
 # Find Edges of the grayscale image
-edged = cv2.Canny(gray, 200, 210)
+edged = cv2.Canny(gray, 170, 200)
 cv2.imshow("4 - Canny Edges", edged)
 
 # Find contours based on Edges
