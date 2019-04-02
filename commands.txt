@@ -1,0 +1,17 @@
+$ python main.py
+
+#runiing charachter enhancement
+
+$ python extract.py  test3.png test.png
+
+#display test.png
+
+$ display test.png
+
+#running tessaract on test.png
+
+$ tesseract test.png out
+
+#read from the out.txt file
+
+$ tesseract test.png out

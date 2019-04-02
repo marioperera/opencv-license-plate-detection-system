@@ -61,7 +61,7 @@ def main():
 
     kNearest.train(npaFlattenedImages, cv2.ml.ROW_SAMPLE, npaClassifications)
 
-    imgTestingNumbers = cv2.imread("test3.png")          # read in testing numbers image
+    imgTestingNumbers = cv2.imread("test.png")          # read in testing numbers image
 
 
 
@@ -74,6 +74,7 @@ def main():
 
     imgGray = cv2.cvtColor(imgTestingNumbers, cv2.COLOR_BGR2GRAY)       # get grayscale image
     imgBlurred = cv2.GaussianBlur(imgGray, (5,5), 0)                    # blur
+    cv2.imshow('processed', imgBlurred)
 
                                                         # filter image from grayscale to black and white
     imgThresh = cv2.adaptiveThreshold(imgBlurred,                           # input image
