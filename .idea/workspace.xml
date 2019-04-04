@@ -2,49 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f2e5f2-d352-4b63-93c7-57c9b62ef544" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/commands.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/char_responses.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/char_samples.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/.directory" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/E.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/F.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/G.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/I.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/J.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/K.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/M.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/N.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/O.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/P.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/Q.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/R.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/S.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/T.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/U.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/V.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/W.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/Y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/chars/Z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_generation/train_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extract.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrainAndTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/TrainAndTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test3.png" beforeDir="false" afterPath="$PROJECT_DIR$/test3.png" afterDir="false" />
@@ -60,46 +21,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+            <state relative-caret-position="232">
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#145#1827#0" />
-                <element signature="e#1872#2070#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/commands.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/extract.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="315" column="39" lean-forward="true" selection-start-line="315" selection-start-column="39" selection-end-line="315" selection-end-column="39" />
+            <state relative-caret-position="105">
+              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrainAndTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-720">
-              <caret line="63" column="40" lean-forward="true" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
-            </state>
+        <entry file="file://$PROJECT_DIR$/data.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
         </entry>
       </file>
@@ -113,15 +66,16 @@
       <list>
         <option value="$PROJECT_DIR$/extract.py" />
         <option value="$PROJECT_DIR$/TrainAndTest.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/commands.txt" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1920" />
-    <option name="width" value="1670" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2017" />
+    <option name="y" value="219" />
+    <option name="width" value="1391" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -135,6 +89,11 @@
             <path>
               <item name="numberplate" type="b2602c69:ProjectViewProjectNode" />
               <item name="numberplate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="numberplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="numberplate" type="462c0819:PsiDirectoryNode" />
+              <item name="outputs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -231,18 +190,18 @@
     <frame x="1920" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17380661" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24541004" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969433" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499388" weight="0.32822758" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499388" visible="true" weight="0.4595186" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32932165" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32822758" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32713348" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.500612" side_tool="true" weight="0.32932165" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32932165" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -251,6 +210,9 @@
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/15.png" />
@@ -269,50 +231,9 @@
     <entry file="file://$PROJECT_DIR$/car.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/3.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/19.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/11.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/7.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/20.jpeg" />
     <entry file="file://$PROJECT_DIR$/classifications.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="315" column="39" lean-forward="true" selection-start-line="315" selection-start-column="39" selection-end-line="315" selection-end-column="39" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TrainAndTest.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -321,34 +242,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/19.jpeg" />
+    <entry file="file://$PROJECT_DIR$/7.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/5.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/3.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/out.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/6.jpeg">
+    <entry file="file://$PROJECT_DIR$/commands.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/original.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+        <state relative-caret-position="232">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#145#1827#0" />
-            <element signature="e#1872#2070#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commands.txt">
+    <entry file="file://$PROJECT_DIR$/extract.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        <state relative-caret-position="105">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="71" />
         </state>
       </provider>
     </entry>
